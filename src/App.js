@@ -4,6 +4,10 @@ import AboutMe from "./pages/About/AboutMe"
 import Resume from "./pages/Resume/Resume"
 import FavSong from "./pages/FavoriteSong/FavSong";
 import Certificate from "./pages/Certificate/Certificate";
+import Grade from "./pages/Grade/Grade";
+import Kaset from "./pages/Gallery/Kaset";
+import Gallery from "./pages/Gallery/Gallery";
+import PreTeaching from "./pages/Gallery/PreTeaching";
 
 
 import { Route, Routes } from "react-router-dom"
@@ -12,7 +16,7 @@ import React from "react";
 //component
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Grade from "./pages/Grade/Grade";
+
 
 
 function App() {
@@ -54,12 +58,30 @@ function App() {
 
     },
     {
+      name: "Gallery",
+      path: "/gallery",
+      element: <Gallery />,
+      title: "Gallery", 
+    },
+    {
       name: "Grade",
       path: "/grade",
       element: <Grade />,
       title: "Grade",
-
-      
+    },
+    {
+      name: "PreTeaching",
+      path: "/preteaching",
+      element: <PreTeaching />,
+      title: "Teaching",
+      show: false, 
+    },
+    {
+      name: "Kaset",
+      path: "/kasetsart",
+      element: <Kaset />,
+      title: "Kasetsart",
+      show: false, 
     },
    
   ];
